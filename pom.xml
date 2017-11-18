@@ -11,7 +11,7 @@
     <properties>
         <java.version>1.8</java.version>
         <allure.version>1.4.16</allure.version>
-        <aspectj.version>1.8.5</aspectj.version>
+        <aspectj.version>1.8.11</aspectj.version>
         <suiteXmlFile>api.xml</suiteXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure.results.directory>surefire-reports</allure.results.directory>
@@ -99,6 +99,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>1.7.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

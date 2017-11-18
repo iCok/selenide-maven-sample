@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import pages.FeaturePage;
 import utils.AllureIntegrationListener;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -29,5 +30,14 @@ public class GoogleTest {
         open("https://www.google.ru/?hl=en");
         assertTrue("Title is wrong", false);
     }
+
+    @Test
+    public void testStepExample() {
+        open("https://www.google.ru/?hl=en");
+        new FeaturePage()
+                .login("abcdef", "1234")
+                .addAccount();
+    }
+
 
 }
