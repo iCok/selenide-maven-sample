@@ -2,7 +2,7 @@
 
 
 Use maven 3.3+ and JDK 1.8 to run the tests
-Default maven goal is "clean test", default browser is "firefox".
+Default maven goal is "clean test", default browser is "chrome".
 
 To RUN tests:
 
